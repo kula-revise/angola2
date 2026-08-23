@@ -482,6 +482,8 @@ body.dark .figure img { filter: brightness(0.9) contrast(1.02); }
   .toggle-btn { font-family: var(--sans); background: transparent; border: none; color: var(--a1); cursor: pointer; font-size: 0.88rem; font-weight: 600; text-decoration: underline; padding: 0.7rem 0 0; }
   .toggle-body { display: none; margin-top: 0.7rem; padding-top: 0.7rem; border-top: 1px dashed var(--hair-strong); font-size: 0.94rem; color: var(--muted); line-height: 1.66; }
   .toggle-body.open { display: block; }
+  .toggle-body p { font-size: inherit; line-height: inherit; color: inherit; margin: 0 0 0.75rem; }
+  .toggle-body p:last-child { margin-bottom: 0; }
 
   /* Questions */
   .q-text { font-size: 1.16rem; line-height: 1.5; font-weight: 600; margin-bottom: 1.2rem; }
@@ -940,7 +942,7 @@ const FLOW = [
       "Because Britain had no way of forging a message in German code"
     ],
     "correct": 1,
-    "explanation": "There is no score on this one. Britain wanted America in the war, so the decode alone could always be doubted. The admission came from the one man the story damaged most. Two records that could not have been arranged between them are worth more than either one alone. In the exam this is what a supports question is asking for, and naming only one of the two sources loses half the marks.",
+    "explanation": "Britain wanted America in the war, so the decoded telegram alone could always be doubted. The admission came from the one man the story damaged most. Two records that could not have been arranged between them are worth more than either alone. In the exam this is what a supports question is asking for. Name only one of the two sources and you lose half the marks.",
     "noSource": true
   },
   {
@@ -1015,7 +1017,7 @@ const FLOW = [
     "source": {
       "attr": "Source B: adapted from Intelligence Appraisal DIAIAPPR 4-76, Defense Intelligence Agency, early 1976. Foreign Relations of the United States 1969 to 1976, Volume E-6, Document 33. A United States government publication.",
       "body": "<p>At the present time, the Soviets are providing military assistance in some form to 17 sub-Saharan countries &hellip; Cuba, the USSR's ally and surrogate [a country acting on another's behalf], also has 7,900 advisors and troops in Black Africa, mainly in the Angolan area.</p><p>In Southern Africa, the USSR is actively supporting Popular Movement for the Liberation of Angola (MPLA) forces in the Angolan civil war. As a part of this effort, some 44 Soviet flights involving both civil and military aircraft have taken place since 1 November. Additionally, at least nine Soviet ships have delivered substantial quantities of arms and equipment to Pointe Noire, Republic of the Congo, as well as Luanda since Angola drifted into independence on 11 November.</p><p>Soviet presence and influence in Angola would not only permit the USSR to threaten vital lines of communication and gain access to a wealth of natural resources but would also establish a base for Soviet subversion [secretly working to undermine a state], which would present a clear danger to the remaining white minority regimes in southern Africa.</p>",
-      "toggle": "This is a secret military intelligence report, written for the American government and not for the public. Two things follow. The numbers are the best Washington had, because there was no reason to inflate them for an internal reader. But the judgement around them is Cold War judgement: surrogate, subversion, and the worry about white minority regimes are how one side described the other. Drifted into independence is the tell. Angola did not drift. It was given a date at Alvor and it kept it.",
+      "toggle": "<p>This report is Washington counting Soviet and Cuban help to the MPLA, and it gives four figures. Soviet military assistance goes to seventeen countries south of the Sahara. Cuba has 7,900 advisors and troops in Africa, most of them in Angola. Forty-four Soviet flights have arrived since 1 November. At least nine Soviet ships have delivered arms to Pointe Noire and to Luanda. The report then says what worries Washington. Soviet access to shipping routes and to resources comes first. So does a base for undermining the white governments still left in southern Africa.</p><p>Now the wording. \"Surrogate\" means a country acting on another's behalf, so the word already decides that Cuba is taking orders. \"Subversion\" means secretly working to undermine a state. \"Drifted into independence\" is the tell. Angola did not drift. It was given a date at Alvor and it kept it.</p><p>One thing about the source itself. It is a secret military report written for the American government, not for the public. The numbers are the best Washington had. Nobody had a reason to inflate them for a reader inside the building. The judgements around the numbers are still one side's judgements, and you should treat them that way.</p>",
       "toggleLabel": "What does this actually mean?"
     },
     "terms": [
@@ -1040,7 +1042,7 @@ const FLOW = [
       "A base for Soviet subversion, and a danger to white minority regimes"
     ],
     "correct": 0,
-    "explanation": "Flights and ships, both Soviet, both counted. Option {opt1} is worth understanding. 7,900 is a real number in the source, but it counts Cubans, not Soviet supply. Read the noun in the question before you go hunting."
+    "explanation": "Flights and ships, both Soviet and both counted in the source. Option {opt1} is worth understanding. The figure 7,900 is real and it is on the page, but it counts Cubans rather than Soviet supply. Read the noun in the question before you go hunting. Quote a Cuban figure for a Soviet question and a marker cannot give you the marks."
   },
   {
     "type": "question",
@@ -1053,7 +1055,7 @@ const FLOW = [
       "Control of all 17 countries that received Soviet assistance"
     ],
     "correct": 0,
-    "explanation": "Resources and reach, both in the closing paragraph, in those words. Option {opt1} names a real place from the source. But the ships only call there, and it is never called a base. A place mentioned is not a claim made, so check what the sentence says before you take it."
+    "explanation": "Resources and reach, both in the closing paragraph, in those words. Option {opt1} names a real place from the source. The ships only call at Pointe Noire, and the source never calls it a base. A place being mentioned is not the same as a claim being made. Check what the sentence actually says, or a marker cannot give you the mark."
   },
   {
     "type": "question",
@@ -1067,7 +1069,7 @@ const FLOW = [
       "That Washington expected Cuba to pull out once the Soviet supply flights had finished"
     ],
     "correct": 0,
-    "explanation": "The report is about Soviet military assistance, and the Cubans are counted inside it. Where a fact is placed is itself an argument. The word beside the count says it too. Cuba is called a surrogate, meaning a country acting on somebody else's behalf. Option {opt2} sounds cautious, and the report is not confused about who is who. Watch where a fact is put and you will catch the claim a document is making without announcing it."
+    "explanation": "The report is about Soviet military assistance, and the Cubans are counted inside it. That placement is itself an argument. The word beside the count says the same thing. Cuba is called a \"surrogate\", which means a country acting on somebody else's behalf. Option {opt2} sounds cautious, and the report is not confused about who is who. Watch where a fact is placed and you catch the claim a document never states. That is where these marks are."
   },
   {
     "type": "source",
@@ -1076,7 +1078,7 @@ const FLOW = [
     "source": {
       "attr": "Source C: adapted from a statement by the representative of Cuba, United Nations Security Council, 1902nd meeting, 29 March 1976. Official record S/PV.1902.",
       "body": "<p>It was not until October that Cuba sent its first instructors to Angola. When they arrived, the imperialists, the South Africans and their lackeys [servants] had already been shamelessly intervening in the country for many months.</p><p>On 23 October, in an attempt to deal a death blow to the Angolan revolution, there was a massive invasion by South African troops, which, using between 100 and 150 tanks and advancing 60 to 70 kilometres a day, marched on the capital of Angola. In the face of that treacherous [betraying] attack by the racists, on 5 November, at the request of MPLA, the Revolutionary Government of Cuba decided to send the first military unit to Angola.</p>",
-      "toggle": "Instructors train. A military unit fights. Cuba draws that line very carefully, because the date each one arrived is the whole argument: instructors in October, soldiers on 5 November, both after the South African advance. Imperialists, lackeys and racists are not descriptions. They tell you this is a speech in a hostile room, aimed at winning it.",
+      "toggle": "<p>Cuba is answering the charge that it started the fighting, and its case runs on dates. Cuba sent instructors only in October, and by then South Africa had been intervening for months. On 23 October South African troops invaded with over a hundred tanks and drove towards Luanda. Cuba sent its first military unit on 5 November, and only after the MPLA asked for it. So everything Cuba did came second.</p><p>Now the wording. \"Instructors\" train and a \"military unit\" fights, and Cuba draws that line very carefully. \"Imperialists\", \"lackeys\" and \"racists\" are not descriptions of anybody. They tell you this is a speech in a hostile room, aimed at winning it.</p><p>One thing about the source itself. This is Cuba's own representative defending Cuba at the Security Council. The dates may well be right, and the man giving them has every reason to want them believed.</p>",
       "toggleLabel": "What does this actually mean?"
     },
     "terms": [
@@ -1111,7 +1113,7 @@ const FLOW = [
       "2": 0,
       "3": 1
     },
-    "explanation": "The numbers on Soviet supply are American. The dates on Cuban arrival are Cuban. Sorting them matters because the next question asks what the two records share, and you cannot answer that until you know which is which."
+    "explanation": "The numbers on Soviet supply are American. The dates on Cuban arrival are Cuban. Sorting them matters, because the next question asks what the two records share. You cannot answer that until you know which claim came from where. Mix the two up and a marker sees you attributing evidence to the wrong source."
   },
   {
     "type": "question",
@@ -1124,7 +1126,7 @@ const FLOW = [
       "Both describe nine ships arriving at Pointe Noire and Luanda"
     ],
     "correct": 0,
-    "explanation": "Source B counts 7,900 Cubans. Source C dates them to October and November. Different measures, same fact underneath, and that is what a supports question wants from you. But watch option {opt2}, because Source C exists to deny exactly that."
+    "explanation": "Source B counts 7,900 Cubans. Source C dates them to October and November. The two use different measures and land on the same fact underneath, which is what a supports question wants. Watch option {opt2}, because Source C exists to deny exactly that. Give the point both sources carry and a marker can give you the marks."
   },
   {
     "type": "question",
@@ -1137,7 +1139,7 @@ const FLOW = [
       "They both rely on the same figures gathered by United Nations observers"
     ],
     "correct": 0,
-    "explanation": "One is a secret American report. The other is a Cuban speech attacking America. Neither was helping the other, and that is why you can lean on the agreement. Option {opt1} is not a reason. Being written in the same year proves nothing about independence.",
+    "explanation": "One is a secret American report. The other is a Cuban speech attacking America. Neither was helping the other, which is why you can lean on the agreement between them. Option {opt1} is not a reason at all. Two documents written in the same year prove nothing about each other. Say why the agreement is unlikely and a marker can give you the marks.",
     "noSource": true
   },
   {
@@ -1151,7 +1153,7 @@ const FLOW = [
       "Not useful, because it gives no date for the Cuban arrival"
     ],
     "correct": 0,
-    "explanation": "Cuba knows when it sent its own troops, so you can lean on the dates. Cuba also needs those dates to fall after the South African advance. Option {opt2} misses that second half, and half an answer gets half the marks."
+    "explanation": "Cuba knows when it sent its own troops, so you can lean on the dates. Cuba also needs those dates to fall after the South African advance. Option {opt2} misses that second half. Give only the first half and a marker can only give you half the marks."
   },
   {
     "type": "question",
@@ -1164,7 +1166,7 @@ const FLOW = [
       "They show the report was written to be published in American newspapers"
     ],
     "correct": 0,
-    "explanation": "Loaded words tell you what the writer had already decided. But option {opt1} goes a step too far, and it is the usual overreach here. A source can be loaded in its language and accurate in its numbers. This one is both, and you should say so."
+    "explanation": "Loaded words tell you what the writer had already decided. Option {opt1} goes a step too far, and it is the usual overreach here. A source can be loaded in its language and accurate in its numbers. This report is both, and your answer should say so. Throw the figures out with the vocabulary and a marker cannot give you the evaluation marks."
   },
   {
     "type": "carousel",
